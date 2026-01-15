@@ -10,6 +10,15 @@ class Pattern {
          }
     }
 
+    public static void pattern2(int n) {
+          for(int i = 1; i <= n; i++) {
+               for(int j = 1; j <= i; j++) {
+                    System.out.print("*"); 
+                }   
+                System.out.println();
+           }       
+     }
+
 
 
 
@@ -18,6 +27,7 @@ class Pattern {
           Scanner scn = new Scanner(System.in);
           System.out.print("Enter the number: ");
           int number = scn.nextInt();
-          pattern1(number);
+        //   pattern1(number);
+          pattern2(number);
      }   
 }
